@@ -1,0 +1,199 @@
+nav{
+    position: absolute;
+    top: 20%;  
+    left: 2%;
+    transform: translate(-50, -50);
+}
+
+nav .drop-btn{
+    width: 350px;
+    background: #dddddd;
+    color: #000000;
+    line-height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav .drop-btn span{
+    float: right;
+    line-height: 50px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+nav .wrapper{
+    position: absolute;
+    top: 65px;
+    display: flex;
+    width: 400px;
+    background: #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3 ease;
+    display: none;
+}
+
+nav .wrapper.show{
+    display: block;
+    display: flex;
+}
+
+nav .wrapper .program_oper_1_drop,
+nav .wrapper .program_oper_2_drop, 
+nav .wrapper .program_oper_3_drop,
+nav .wrapper .program_oper_4_drop,
+nav .wrapper .program_oper_5_drop, 
+nav .wrapper .program_oper_6_drop{ 
+    display: none;
+}
+/* Style dla programów operacyjnych */
+nav .wrapper ul{
+    list-style: none;
+    width: 400px;
+    padding: 10px;
+    transition: all 0.3 ease;
+}
+
+nav .wrapper ul li {
+    line-height: 55px;
+}
+
+nav .wrapper ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    display:flex;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+nav .wrapper ul li:hover .hover_program_oper{
+    background: #3A3B3C;
+}
+
+.wrapper ul li a .icon{
+    height: 40px;
+    width: 40px;
+    margin-right: 13px;
+    background: #ffffff1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.wrapper ul li a i{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    pointer-events: none;
+}
+
+.wrapper ul .arrow_icon{
+    padding-left: 10px;
+    font-size: 20px;
+    color: #b0b3b8;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.wrapper ul .arrow_icon span {
+    margin-right: 15px;
+}
+
+/* Style dla priorytetów */
+ul.program_oper_1_drop li,
+ul.program_oper_2_drop li, 
+ul.program_oper_3_drop li,
+ul.program_oper_4_drop li, 
+ul.program_oper_5_drop li,
+ul.program_oper_6_drop li {
+    line-height: 55px;
+}
+
+ul.program_oper_1_drop li a,
+ul.program_oper_2_drop li a,
+ul.program_oper_3_drop li a,
+ul.program_oper_4_drop li a,
+ul.program_oper_5_drop li a,
+ul.program_oper_6_drop li a{
+    position: relative;
+    text-decoration: none;
+    border-radius: 5%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+ul.program_oper_1_drop a,
+ul.program_oper_2_drop a, 
+ul.program_oper_3_drop a,
+ul.program_oper_4_drop a,
+ul.program_oper_5_drop a, 
+ul.program_oper_6_drop a {
+    background-color: #dddddd;
+}
+
+ul.program_oper_1_drop a:hover,
+ul.program_oper_2_drop a:hover, 
+ul.program_oper_3_drop a:hover, 
+ul.program_oper_4_drop a:hover, 
+ul.program_oper_5_drop a:hover, 
+ul.program_oper_6_drop a:hover {
+    background: #3A3B3C;
+    color: #ffffff;
+}
+
+ul.program_oper_1_drop li a .icon,
+ul.program_oper_2_drop li a .icon,
+ul.program_oper_3_drop li a .icon,
+ul.program_oper_4_drop li a .icon,
+ul.program_oper_5_drop li a .icon,
+ul.program_oper_6_drop li a .icon{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul.program_oper_1_drop li a i,
+ul.program_oper_2_drop li a i,
+ul.program_oper_3_drop li a i,
+ul.program_oper_4_drop li a i,
+ul.program_oper_5_drop li a i,
+ul.program_oper_6_drop li a i{
+    font-size: 25px;
+    pointer-events: none;
+}
+
+ul.program_oper_1_drop .arrow_icon,
+ul.program_oper_2_drop .arrow_icon,
+ul.program_oper_3_drop .arrow_icon,
+ul.program_oper_4_drop .arrow_icon,
+ul.program_oper_5_drop .arrow_icon,
+ul.program_oper_6_drop .arrow_icon {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #b0b3b8;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+ul.program_oper_1_drop .arrow_icon span,
+ul.program_oper_2_drop .arrow_icon span,
+ul.program_oper_3_drop .arrow_icon span,
+ul.program_oper_4_drop .arrow_icon span,
+ul.program_oper_5_drop .arrow_icon span,
+ul.program_oper_6_drop .arrow_icon span{
+    margin-right: 15px;
+}
+
