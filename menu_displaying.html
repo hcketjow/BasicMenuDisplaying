@@ -12,7 +12,7 @@
 </head>
 <body>  
     <link rel="stylesheet" type="text/css" href="styles_for_menu.css">
-    <!-- Navbar on the right side for selecting the po -->
+    <!-- Navbar on the right side for selecting the option -->
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -93,8 +93,8 @@
                         <ul class="program_oper_2_drop">
                             <li class="arrow_icon back_program_oper_2"><span class="fas fa-arrow-left"></span>Option 2</li>
                             <li>
-                                <div class="list-group" id="list-tab" role="tablist">
-                                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                                <div class="list-group" id="list-tab_option2" role="tablist_option2">
+                                    <a class="list-group-item list-group-item-action active" id="list-form-list" data-bs-toggle="list" href="#list-form" role="tab" aria-controls="list-form">
                                         <div class="icon"><span class="fas fa-circle"></span></div>
                                         TO DO option
                                     </a>
@@ -126,7 +126,7 @@
                     </div>
                 </nav>
             </div>
-            <!-- Zawartość priorytetów -->
+            <!-- First option -->
             <div class="col-md-8" style="margin-top: 12%">
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="list-table1" role="tabpanel" aria-labelledby="list-table1-list">
@@ -283,6 +283,19 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+                <!-- Second option -->
+                <div class="tab-content_option2" id="nav-tabContent_option2">
+                    <div class="tab-pane fade show active" id="list-form" role="tabpanel" aria-labelledby="list-form-list">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="emailFloatInput" placeholder="admin@gmail.com">
+                            <label for="emailFloatInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="PasswordInput" placeholder="Password">
+                            <label for="PasswordInput">Password</label>
+                        </div>
                     </div>
                 </div>
             </div>
